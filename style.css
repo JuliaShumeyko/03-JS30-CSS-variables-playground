@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+:root {
+ --base: #a4ceff;
+ --spacing: 10px;
+ --blur: 10px;
+}
+
 body {
     text-align: center;
-    background: #193549;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     color: white;
     font-family: 'helvetica neue', sans-serif;
     font-weight: 100;
     font-size: 50px;
+    font-family: 'Raleway', sans-serif;
   }
 
   .controls {
@@ -13,4 +22,24 @@ body {
 
   input {
     width: 100px;
+    margin: 0 20px;
+  }
+
+  h2 {
+      font-size: 3rem;
+  }
+
+  label {
+      font-size: 1.5rem;
+  }
+
+  img {
+      height: 65vh;
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+  }
+
+  .highlight {
+      color: var(--base);
   }
